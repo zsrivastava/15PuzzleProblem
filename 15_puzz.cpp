@@ -1,7 +1,6 @@
 
 //  15_puzz.cpp
 //  AI Project
-//  zds238
 //  Submitted by Zubin Srivastava on 4/9/20.
 //  Copyright © 2020 Zubin Srivastava. All rights reserved.
 //
@@ -296,7 +295,7 @@ int compare_states(map<int, vector<int>> curr){
             //move added to move vector
             newbie->moves.push_back('L');
         }
-        if(cmd == 'R'){
+        else if(cmd == 'R'){
             //Make Right Pointer
             this->right = newbie;
             //pointers on left and right are created to make it easier not to make the State being expanded repeat
@@ -304,7 +303,7 @@ int compare_states(map<int, vector<int>> curr){
             //move added to move vector
             newbie->moves.push_back('R');
         }
-        if(cmd == 'U'){
+        else if(cmd == 'U'){
             //Make Up Pointer
             this->up = newbie;
             //pointers up and down are created to make it easier not to make the State being expanded repeat
@@ -312,7 +311,7 @@ int compare_states(map<int, vector<int>> curr){
             //move added to move vector
             newbie->moves.push_back('U');
         }
-        if(cmd == 'D'){
+        else if(cmd == 'D'){
             //Make Down Pointer
             this->down = newbie;
             //pointers up and down are created to make it easier not to make the State being expanded repeat
